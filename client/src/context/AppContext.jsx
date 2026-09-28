@@ -7,7 +7,7 @@ const AppContext = createContext()
 
 export const AppContextProvider = ({ children }) => {
 
-  const navigate = useNavigate
+  const navigate = useNavigate()
   const [user, setUser] = useState(null);
   const [chats, setChats] = useState([]);
   const [selectedChat, setSelectedChat] = useState(null);
